@@ -1,23 +1,32 @@
-import React from 'react'
+import {useState} from 'react'
 
 export const LearnSates = () => {
   
-  let variable1 = 'Vijay Kumar'
-  function thisBaseFunction(){
+ const [name,setDataName] = useState('Vijay Name will be Updated')
+ 
+ 
+  function updateNameData(){
 
-    variable1 = "My name is Vijay Kumar"
+    setDataName('Vijay Kumar')
 
-    alert(variable1)
+   
+   
+    // alert(name)
 
   }
+
 
   return (
     <div>
 
-      <h1>Header Component</h1>
-      <h2>{variable1}</h2>
-      <button onClick={()=>thisBaseFunction()}>Click Button</button>
+      <h1 style={{color:'red'}}>Learn States in React</h1>
+      <hr />
+      
+      <h2>{name}</h2>
+      <button onClick={()=>updateNameData()}>Click Button</button>
 
     </div>
   )
+
+
 }
