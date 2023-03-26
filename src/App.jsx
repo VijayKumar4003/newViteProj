@@ -1,18 +1,22 @@
-import './App.css'
-import { LearnSates } from './components/LearnSates'
-
+import "./App.css";
+import { Props } from "./components/Props";
 
 function App() {
-  
-  
+  const carInfo = { name: "Ford", model: "Mustang" };
+  const carName = "Ford";
   return (
     <>
-        {/* This is the comment technique used in React*/} 
+      {/* The variable data will be sended to Component Props*/}
+      <h1>Learning Props in React</h1>
+      <hr />
+      <hr />
 
-        <LearnSates />
+      <Props brandName={carName} /> 
 
+      <Props brand={carInfo} /> 
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
