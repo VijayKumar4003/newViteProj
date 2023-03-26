@@ -13,8 +13,8 @@ function App() {
 
       <Props brandName={carName} /> 
 
-      <Props brand={carInfo} /> 
-      
+      {/* <Props brand={carInfo} />  */}
+
     </>
   );
 }

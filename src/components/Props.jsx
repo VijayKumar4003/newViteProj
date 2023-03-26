@@ -10,7 +10,7 @@ export const Props = (props) => {
 
       <h2>I am a { props.brandName }!</h2>;
 
-      <h2>I am a { props.brand.model }!</h2>;
+      {/* <h2>I am a { props.brand.model }!</h2>; */}
 
 
 
