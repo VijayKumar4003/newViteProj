@@ -8,6 +8,7 @@ function App() {
     <>
       {/* The variable data will be sended to Component Props*/}
       <h1>Learning Props in React</h1>
+      <h2>To Learn this need to practise everyday</h2>
       <hr />
       <hr />
 
